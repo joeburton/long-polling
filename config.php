@@ -1,9 +1,5 @@
 <?php
 	/*
-	$dbhost="213.171.219.98";
-	$dbusername="joeburton1979";
-	$dbpassword="joeburton1979";
-	$dbname="joeburton";
 	*/
 	
 	$dbhost="localhost";
