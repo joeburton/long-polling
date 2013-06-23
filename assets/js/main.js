@@ -5,6 +5,9 @@
     // call immediately on first load
     var initLoad = 0;
     
+    var main = $('.main'),
+        ul = main.find('ul');
+    
     (function poll() {
 		setTimeout(function() {
 			$.ajax({ url: api, success: function(data) {
@@ -23,7 +26,8 @@
 	function displayNames(data) {		
 		counter = counter + 1;
 		//console.log('Server data ' + counter + ':' + data);
-        console.log('Server data ' + counter + ':' + data['1'].id);
+        console.log('Server data ' + counter + ':' + data['1'].id + '\n');
+        ul.append('Server data' + counter + ':' + data['1'].id + '<br />');
 	}
     
     /*
