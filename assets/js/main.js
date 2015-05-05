@@ -1,4 +1,4 @@
-(function() {
+var longPolling = (function() {
 	
 	var api = 'http://localhost/~joe/labs/long-polling/data_json.php?role=all',
 	    counter = 0,
@@ -6,7 +6,7 @@
 	    main = $('.main'),
 	    ul = main.find('ul');
 	    
-    (function poll() {
+    var poll = function () {
 		setTimeout(function() {
 			$.ajax({ url: api, success: function(data) {
 				
@@ -15,14 +15,15 @@
 				
 			}, complete: poll, dataType: "json"});
 		}, initLoad);
-	})();
+	};
 	
-	function displayNames(data) {		
+	var displayNames = function (data) {		
 		counter = counter + 1;
-		//console.log('Server data ' + counter + ':' + data);
         console.log('Server data ' + counter + ':' + data['1'].id + '\n');
         ul.append('Server data' + counter + ':' + data['1'].id + '<br />');
 	}
+
+	poll();
     
 })();
 
