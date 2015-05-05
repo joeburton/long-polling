@@ -1,12 +1,9 @@
 <?php
-	/*
-	*/
 	
 	$dbhost="localhost";
 	$dbusername="root";
-	$dbpassword="";
+	$dbpassword="my-new-password";
 	$dbname="dev";
-		
 	
 	// Connect to Mysql
 	$connect = mysql_connect($dbhost, $dbusername, $dbpassword);
