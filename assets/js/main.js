@@ -21,7 +21,7 @@ var longPolling = (function() {
 		counter = counter + 1;
         console.log('Server data ' + counter + ':' + data['1'].id + '\n');
         ul.append('Server data' + counter + ':' + data['1'].id + '<br />');
-	}
+	};
 
 	poll();
     
