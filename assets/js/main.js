@@ -23,6 +23,10 @@ var longPolling = (function() {
         ul.append('Server data' + counter + ':' + data['1'].id + '<br />');
 	};
 
+	var stopPolling = function () {
+
+	};
+
 	return {
 		poll: poll
 	}

@@ -67,15 +67,15 @@ ul li {
 	margin: 0 0 3px 0;
 }
 
-/* Landscape smartphone
+/* Landscape smartphone */
 @media screen and (min-width: 480px) {
     #wrapper {
         max-width:480px;
     }
-} */
+} 
 
 
-/* Portrait smartphone
+/* Portrait smartphone */
 @media screen and (min-width: 150px) and (max-width: 479px) {
     #wrapper {
         max-width:320px;
@@ -83,4 +83,4 @@ ul li {
 	.list-form input {
 		width: 95.5%;
 	}
-} */
+} 
