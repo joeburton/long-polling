@@ -1,4 +1,4 @@
 Long Polling
 ============
 
-Old but very useful Long Polling technique
+Old but very useful long-polling technique
