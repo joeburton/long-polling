@@ -11,7 +11,7 @@ var longPolling = (function() {
             $.ajax({ url: api, success: function(data) {
                 
                 displayNames(data);
-                pollSpeed = 2000; // set the polling time to 5 seconds
+                pollSpeed = 5000; // set the polling time to 5 seconds
                 
             }, complete: poll, dataType: "json"});
         }, pollSpeed);
